@@ -1,0 +1,36 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package poo.dmartínez.t02;
+
+/**
+ *
+ * @author DanielAlexandro
+ */
+public class ProductosCongelados extends Productos {
+    //Atributos
+    protected float tempRecomendada;
+
+    /**
+     * 
+     * @param nombre
+     * @param caducidad
+     * @param lote
+     * @param precio 
+     * @param tempRecomendada
+     */
+    public ProductosCongelados(String nombre, String caducidad, int lote, float precio, float tempRecomendada) {
+        super(nombre, caducidad, lote, precio);
+        this.tempRecomendada = tempRecomendada;
+    }
+    
+    /**
+     * Este metodo regresa la temperatura recomendada de almacenamiento
+     * @return tempRecomendada como float
+     */
+    public float getTempRecomendada(){
+        return this.tempRecomendada;
+    }
+}
